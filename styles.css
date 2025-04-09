@@ -1,0 +1,220 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 500px;
+  margin-top: 40px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#title {
+  text-align: center;
+}
+
+#add-student-input {
+  display: flex;
+  justify-content: center;
+  padding: 10px 5px;
+  width: 250px;
+  border-radius: 4px;
+  margin: auto;
+  border: 1px solid blue;
+  outline: none;
+  transition: 0.4s ease;
+}
+
+#add-student-input:focus {
+  outline: blue 3px solid;
+}
+
+.add-student-btn {
+  background-color: blue;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  display: block;
+  margin: 10px auto;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.add-student-btn:hover {
+  background-color: rgb(3, 3, 196);
+}
+
+.remove-btn {
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  padding: 5px;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+}
+
+.graduate-btn {
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  padding: 5px;
+}
+.graduate-btn:hover {
+  background-color: rgb(1, 68, 1);
+}
+
+#student-list {
+  background-color: #e9ecef;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.student-element {
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  transition: 0.5s ease;
+}
+
+.div-of-btns {
+  display: flex;
+  gap: 5px;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-30px);
+  }
+  40%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.container.shake {
+  animation: shake 0.4s ease;
+}
+
+#reverse-order-btn {
+  background-color: blue;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  padding: 5px;
+  height: 50px;
+  margin-left: 5px;
+  display: none;
+}
+
+#reverse-order-btn:hover{
+  background-color: rgb(3, 3, 196);
+}
+
+#sort-students-btn{
+  background-color: blue;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  width: 200px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  padding: 5px;
+  height: 50px;
+  display: none;
+}
+
+#sort-students-btn:hover{
+  background-color: rgb(3, 3, 196);
+}
+
+.buttons{
+  margin-left: 10px;
+  display: flex;
+}
+
+#Search-students-input {
+  padding: 10px 5px;
+  width: 50%;
+  border-radius: 4px;
+  border: 1px solid blue;
+  outline: none;
+  transition: 0.4s ease;
+  display: none;
+}
+
+#search-Students-label{
+  display: none;
+}
+
+#Search-students-input:focus {
+  outline: blue 3px solid;
+}
+
+.search-input-div{
+  margin-left: 10px;
+}
+
+.div-of-list-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.filter-student{
+  margin-left: 10px;
+  display: none;
+}
+
+.filter-student button{
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  color: #fff;
+  border-radius: 4px;
+  width: 100px;
+  height: 70px;
+  padding: 5px;
+  transition: 0.8s ease;
+}
+
+.filter-student button:hover{
+  background-color: darkblue;
+}
+
+.graduated{
+  text-decoration: line-through;
+  color: grey;
+}

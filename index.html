@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Student Management System</h1>
+        <input id="add-student-input" type="text" placeholder="Add Student Name...">
+        <button onclick="addStudent()" id="add-student-btn" class="add-student-btn">ADD STUDENT</button>
+        <ul id="student-list">
+        </ul>
+        <div class="buttons">
+            <button class="sort-students-btn" id="sort-students-btn" onclick="sortByName()">SORT STUDENTS BY NAME</button>
+            <button class="reverse-order-btn" id="reverse-order-btn" onclick="reverseOrder()">REVERSE ORDER</button>    
+        </div>
+        <div class="search-input-div">
+            <label for="Search-students-input" id="search-Students-label"><h3>Search Students:</h3></label>
+            <input type="text" id="Search-students-input" placeholder="Search by name or ID">
+        </div>
+        <div class="filter-student" id="filter-student">
+            <h3 class="filter-students-text">Filter Students</h3>
+            <button onclick="showGraduted()">SHOW GRADUATED</button>
+            <button onclick="ShowNonGraduted()">SHOW NON-GRADUATED</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
